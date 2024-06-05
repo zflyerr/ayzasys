@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import "../partials/colors.scss";
+
+body{
+    font-family: 'Montserrat', regular;
+    position: relative;
+    background-image: $colorbackground;
+    color: $colorfont;
+    }
+
+#bvoltar{
+    position: fixed;
+    top: 10px;
+    margin-left: 20px;
+}
+
+#bcarrinho{
+    position: fixed;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#bcarrinho:hover{
+    background-color: rgb(0, 255, 115);
+}
+
+.htitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32pt;
+    margin-top: 100px;
+}
+
+.bpedir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px ;
+    font-size: 30px;
+    width: auto;
+}
+
+button{
+    cursor: pointer;
+    font-family: 'Montserrat', regular;
+    animation: btt 0.5s forwards;
+    background-color: $colorbutton;
+    color: $colorfont;
+    border: 0;
+    border-radius: 98px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+    
+}
+
+button:hover{
+    background-color: $colorbuttonhover;
+    animation: btranslate 0.8s forwards ;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dheader{
+    display: flex;
+}
+
+#blanguage{
+    position: fixed;
+    left: 0;
+    margin-left: 20px;
+    bottom: 20px;
+}
+
+
+#bhelp{
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    margin-right: 20px;
+}
+
+#ht2{
+    margin-top: 1px;
+}
+
+@keyframes btranslate{
+    from{
+       transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes btt{
+    from{
+       transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
