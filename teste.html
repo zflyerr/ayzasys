@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Selector</title>
+  <style>
+    .language-selector {
+      position: relative;
+      display: inline-block;
+    }
+
+    .language-selector button {
+      background-color: #f1f1f1;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    .language-selector .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .language-selector .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .language-selector .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .language-selector .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="language-selector">
+  <button onclick="toggleDropdown()">Select Language</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" onclick="changeLanguage('en')">English</a>
+    <a href="#" onclick="changeLanguage('es')">Spanish</a>
+    <!-- Adicione mais idiomas conforme necessário -->
+  </div>
+</div>
+
+<h1 id="title">Welcome</h1>
+<p id="content">This is some content.</p>
+
+<script>
+  function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  function changeLanguage(lang) {
+    var translations = {
+      'en': {
+        'title': 'Welcome',
+        'content': 'This is some content.'
+      },
+      'es': {
+        'title': 'Bienvenido',
+        'content': 'Este es algún contenido.'
+      }
+      // Adicione mais traduções conforme necessário
+    };
+
+    // Atualize o texto com base no idioma selecionado
+    document.getElementById('title').textContent = translations[lang].title;
+    document.getElementById('content').textContent = translations[lang].content;
+  }
+
+  // Feche o dropdown se o usuário clicar fora dele
+  window.onclick = function(event) {
+    if (!event.target.matches('.language-selector button')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import "../partials/colors.scss";
+
+body{
+    font-family: 'Montserrat', regular;
+    position: relative;
+    background-image: $colorbackground;
+    color: $colorfont;
+    height: 100%;
+    width: 100%;
+    }
+
+button{
+    cursor: pointer;
+    animation: btt 0.5s forwards;
+    font-family: 'Montserrat', regular;
+    background-color: $colorbutton;
+    color: $colorfont;
+    border: 0;
+    border-radius: 98px;
+    padding: 10px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: $colorbuttonhover;
+    animation: btranslate 0.3s forwards;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.htitle{
+   text-align: center;
+    font-size: 32pt;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    animation: btt 0.3s forwards;
+}
+
+
+.divacess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -30px;
+}
+
+
+.blogin{
+    cursor: pointer;
+    animation: btt 0.3s forwards;
+    font-family: 'Montserrat', regular;
+    margin-left: 20px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+    background-color: $colorbselect;
+    color: $colorfont;
+    margin-top: 60px;
+    border: 0;
+    border-radius: 98px;
+    padding: 10px;
+    text-align: center;
+}
+
+.blogin:hover{
+    background-color: $colorbselecthover;
+    transition: color 0.3s;
+    animation: btranslate 0.3s forwards;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.divinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputlogin{
+    background-color: $colorbutton;
+    border: 0;
+    border-radius: 98px;
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $colorfont;
+    animation: btt 0.3s forwards;
+    
+}
+
+.inputlogin::placeholder{
+    color: $colorfont;
+}
+
+.tableinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes btranslate{
+    from{
+       transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+@keyframes btt{
+    from{
+        transform: scale(1.2);
+     }
+     to{
+         transform: scale(1);
+     }
+}

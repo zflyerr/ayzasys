@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: "Montserrat", regular;
+  position: relative;
+  background-image: linear-gradient(to right, #430E3C, #8D1B7D);
+  color: #f0f8ff;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  animation: btt 0.5s forwards;
+  font-family: "Montserrat", regular;
+  background-color: rgba(170, 170, 170, 0.6039215686);
+  color: #f0f8ff;
+  border: 0;
+  border-radius: 98px;
+  padding: 10px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: rgba(0, 50, 158, 0.4);
+  animation: btranslate 0.3s forwards;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.htitle {
+  text-align: center;
+  font-size: 32pt;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  animation: btt 0.3s forwards;
+}
+
+.divacess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -30px;
+}
+
+.blogin {
+  cursor: pointer;
+  animation: btt 0.3s forwards;
+  font-family: "Montserrat", regular;
+  margin-left: 20px;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: center;
+  background-color: #0085FF;
+  color: #f0f8ff;
+  margin-top: 60px;
+  border: 0;
+  border-radius: 98px;
+  padding: 10px;
+  text-align: center;
+}
+
+.blogin:hover {
+  background-color: #0099ff;
+  transition: color 0.3s;
+  animation: btranslate 0.3s forwards;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.divinput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputlogin {
+  background-color: rgba(170, 170, 170, 0.6039215686);
+  border: 0;
+  border-radius: 98px;
+  font-size: 20px;
+  width: 400px;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f0f8ff;
+  animation: btt 0.3s forwards;
+}
+
+.inputlogin::-moz-placeholder {
+  color: #f0f8ff;
+}
+
+.inputlogin::placeholder {
+  color: #f0f8ff;
+}
+
+.tableinput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes btranslate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes btt {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=login.css.map */

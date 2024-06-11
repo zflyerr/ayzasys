@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="..\sass\login.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+        <body>
+            <header>
+                <span class="logo">
+                    <img width="225px" src="../assets/Augusto.png" id="logo">
+                </span>
+            </header>
+            <h1 class="htitle">Entre em sua<br>Conta! 😀</h1>
+                        <form onsubmit="login1(event)">
+                            <table class="tableinput">
+                                <div id="divinput2">
+                                <tr><td><input class="inputlogin" id="inputemail" type="text" placeholder="E-mail" required></td></tr>
+                                <tr><td><input class="inputlogin" id="inputsenha" type="password" placeholder="Senha" required></td></tr>
+                                </div>
+                            </table>
+                            <div class="divacess">
+                                <input class="blogin" value="Entrar" type="submit" >
+                                <input class="blogin" value="Nova conta" type="submit">
+                            </div>
+                        </form>
+
+                    <script>
+                        function login1() {
+                            event.preventDefault();
+                            var email = document.getElementById('inputemail').value;
+                            var senha = document.getElementById('inputsenha').value;
+                            if (email === "augusto.marmiroli@etec.sp.gov.br" && senha === "123456") {
+                                    window.location.href = 'pages/inicio.html';
+                                } else if (email === "bruna.garcia52@etec.sp.gov.br" && senha === "123456") {
+                                    window.location.href = 'pages/inicio.html';
+                                } else if (email === "guilherme.faggian@etec.sp.gov.br" && senha === "123456"){
+                                    window.location.href = 'pages/inicio.html';
+                                } else if (email === "camila.medeiros11@etec.sp.gov.br" && senha === "123456"){
+                                    window.location.href = 'pages/inicio.html';
+                                } else if (email === "giovanna.abreu12@etec.sp.gov.br" && senha === "123456"){
+                                    window.location.href = 'pages/inicio.html';
+                                } else {
+                                    alert='E-mail ou senha incorretos.';
+                                }
+
+                            return false;
+                        }
+                    
+                    </script>
+        </body>
+</html>

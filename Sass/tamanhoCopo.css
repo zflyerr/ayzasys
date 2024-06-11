@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: "Montserrat", regular;
+  position: relative;
+  background-image: linear-gradient(to right, #430E3C, #8D1B7D);
+  color: #f0f8ff;
+}
+
+button {
+  cursor: pointer;
+  animation: btt 0.5s forwards;
+  font-family: "Montserrat", regular;
+  background-color: rgba(170, 170, 170, 0.6039215686);
+  color: #f0f8ff;
+  border: 0;
+  border-radius: 98px;
+  padding: 10px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: rgba(0, 50, 158, 0.4);
+  animation: btranslate 0.3s forwards;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#bvoltar {
+  position: fixed;
+  top: 10px;
+  margin-left: 20px;
+}
+
+#bcarrinho {
+  position: fixed;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.bselect {
+  background-color: #0085FF;
+  color: #f0f8ff;
+  margin-left: 20px;
+  height: 60px;
+  width: 90px;
+}
+
+.bselect:hover {
+  background-color: #0099ff;
+}
+
+.htitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32pt;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+#blanguage {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+#bhelp {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  margin-right: 20px;
+}
+
+.dheader {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.bpedir {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+#bpedir {
+  width: 225px;
+  font-size: 30px;
+}
+
+#blanguage {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+#bhelp {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  margin-right: 20px;
+}
+
+table {
+  background-color: rgba(170, 170, 170, 0.6039215686);
+  border-radius: 18px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#tabops {
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  display: flexbox;
+  height: 180px;
+  margin-top: 30px;
+}
+
+.bselect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dselect {
+  display: flex;
+  padding-bottom: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+#select3 {
+  padding-bottom: 0px;
+}
+
+.imgcopo {
+  height: auto;
+  width: 100px;
+  animation: btt 0.5s forwards;
+}
+
+@keyframes btranslate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes btt {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=tamanhoCopo.css.map */
