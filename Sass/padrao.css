@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  background: rgb(68, 0, 75);
+  background: linear-gradient(90deg, rgb(68, 0, 75) 0%, rgb(121, 9, 115) 30%, rgb(186, 57, 144) 91%);
+  color: #f0f8ff;
+  height: 100%;
+  width: 100%;
+}
+
+.hdbutton {
+  cursor: pointer;
+  animation: btt 0.5s forwards;
+  font-family: "Montserrat", regular;
+  background-color: rgba(170, 170, 170, 0.6039215686);
+  color: #f0f8ff;
+  border: 0;
+  border-radius: 98px;
+  padding: 5px;
+  text-align: center;
+}
+
+.hdbutton:hover {
+  background-color: rgba(0, 50, 158, 0.4);
+  animation: btranslate 0.3s forwards;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#btestnow {
+  justify-content: center;
+  background-color: #0085FF;
+  color: #f0f8ff;
+  cursor: pointer;
+  animation: btt 0.5s forwards;
+  font-family: "Montserrat", regular;
+  color: #f0f8ff;
+  border: 0;
+  border-radius: 98px;
+  padding: 5px;
+  text-align: center;
+}
+
+#btestnow:hover {
+  background-color: #0099ff;
+  transition: color 0.3s;
+  animation: btranslate 0.3s forwards;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@keyframes btranslate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes btt {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=padrao.css.map */

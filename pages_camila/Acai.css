@@ -1,0 +1,251 @@
+@charset "UTF_8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --corfundo: #3C2440;
+    --corgreen: #6bdd3e;
+    --corazulada: #1F3A3C;
+    --bege:#F4E9CD;
+    --roxoclaro:#B066B0;
+
+    --fonteprincipal:'Ubuntu', helvetica,Arial ;
+    --fontetexto:'Roboto',helvetica, Arial;
+}
+
+button{
+    border: 0;
+    margin-right: 30px ;
+    padding: 13px 15px;
+    background-color: #6bdd3e;
+    margin: 0px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#logoacai{
+    width: 100px;
+}
+
+#div1{
+    display: flex;
+    justify-content: center;
+;
+    
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--corfundo);
+    font-family:'Roboto',helvetica, Arial;
+}
+
+header{
+    background-color: white;
+    padding: 0px 10px 50px 0px;
+    margin-top: -20px;
+}
+
+nav {
+    margin: auto;
+    font-weight: bold;
+}
+
+#nav {
+    margin: 30px;
+}
+
+#peca {
+    background-color: #704578;
+    color: white;
+}
+
+nav > a:active{
+    background-color: #6bdd3e;
+    color: white;
+    text-decoration: none;
+}
+
+nav > a:visited {
+    background-color: #6bdd3e;
+    color: #583358;
+    text-decoration: none;
+}
+
+
+nav > a:hover{
+    background-color: var(--roxoclaro);
+    color: white;
+    text-decoration: underline;
+}
+
+article {
+    padding: 30px;
+}
+
+main {
+    font-size: 20px;
+}
+
+main > img {
+    width: 100%;
+}
+
+.conteudo {
+    background-color: #F4E9CD;
+    padding: 10px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin: auto auto 50px auto;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Ubuntu', helvetica,Arial;
+    color: var(--corazulada);
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+h2 {
+    color: var(--roxoclaro);
+    padding: 50px 0px 10px 0px;
+    font-size: 30px;
+}
+
+main ul{
+    line-height: 30px;
+    list-style-type: square;
+    list-style-position: inside;
+    columns: 2;
+    padding-bottom: 20px;
+}
+
+li {
+    padding: 10px;
+}
+
+div.mapa_responsivo{
+    overflow: hidden;
+    padding-bottom: 56%;
+    position: relative;
+    height: 0;
+}
+
+.mapa_responsivo iframe{
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#sabores{
+    padding:0px 0px 10px 0px; 
+}
+
+dl {
+    line-height: 30px;
+}
+
+dt {
+    color: rgb(16, 111, 88);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+aside {
+    background-color: #F4E9CD;
+    padding: 10px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin: auto auto 50px auto;
+    border-radius: 5px;
+}
+
+a img{
+    width: 20px;
+}
+
+.lista1{
+    columns: 1;
+}
+
+.redes{
+    width: 30px;
+    display: inline;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+}
+
+form {
+    display: inline;
+    font-family: 'roboto',Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    width: 200px;
+}
+
+footer {
+    color: white;
+    background-color: rgb(38, 180, 166);
+    text-align: center;
+    padding: 10px;
+}
+
+.textarea{
+
+  display: inline;
+  margin-left: 300px;
+}
+
+
+
+textarea {
+    font-family:'Roboto',helvetica, Arial;
+    border-color: #704578;
+    border-width: 3px;
+    width: 561px;
+    height: 224px;
+    font-size: 20px;
+
+}
+
+#contatos {
+    padding-bottom: 0px;
+}
+
+input {
+    border: 0;
+    margin-left: 90px;
+    padding: 15px;
+    background-color: #5f2583;
+    color: white;
+    margin: 0px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+span {
+    color: #841a84;
+    font-weight: 500;
+}

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* não consegui colocar a fonte monteserrat*/
+
+  body {
+    position: relative;
+    color: white;
+    background-color: #40193b;
+    background-image: linear-gradient(to bottom, #430E3C, #8D1B7D);
+    /* troquei a cor do fundo só para enxengar as letras em brando, já que não consegui colocar o fundo grandiente*/
+  }
+
+  button {
+    cursor: pointer;
+    animation: btt 0.5s forwards;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#310b2d;
+    color: #f0f8ff;
+    border: 0;
+    border-radius: 98px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+  }/* peguei quase todas as formatações de botao tendo como base as suas páginas*/
+  
+  button:hover {
+    background-color: rgba(0, 50, 158, 0.4);
+    animation: btranslate 0.3s forwards;
+    transition: background-color 0.3s, color 0.3s;
+  }/* peguei quase todas as formatações de botao tendo como base as suas páginas*/
+
+
+
+ h1 {
+  font-size: 50px;
+  font-weight: 400;
+  padding-right: 20px; /* coloquei essse padding pra que o site fique mais responsivo*/
+  margin-bottom: 150px;
+  margin-left: 50px;
+  margin-top: 100px;
+ }
+
+ div.h2 {
+  margin: 20px 0px 20px 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+div.numeros {
+  margin-left: 40px;
+}
+
+li {
+  font-weight: lighter;
+  list-style: none; /* coloquei none pra lista não ter marcadores */
+  font-size: 20px;
+  line-height: 30px;
+}
+
+div#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /*até aqui são configurações que tive como base de um vídeo do youtube */
+  background-color:transparent;
+  margin: auto;
+ }
+
+ div#form h2 {
+  color: #74D5FF;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 20px;
+ }
+
+ form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+ } /* configurações que tive como base de um vídeo do youtube */
+
+ form label {
+  color: #f0f8ff;
+  font-size: 20px;
+  margin-bottom: 4px;
+ } /* configurações que tive como base de um vídeo do youtube */
+
+form input {
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: all 0.5s;
+ } /* configurações que tive como base de um vídeo do youtube */
+
+ form input:focus { /* focus é usado pra quando algo é selecionado*/
+  border-radius: 16px;
+ } /* configurações que tive como base de um vídeo do youtube */
+
+
+ form textarea {
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size:16px;
+  margin-bottom: 15px;
+  transition: all 0.5s;
+ } /* configurações que tive como base de um vídeo do youtube */
+
+ form textarea:focus {
+  border-radius: 16px;
+ }/* configurações que tive como base de um vídeo do youtube */
+
+ form button {
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  transition: all 1s;
+  margin-bottom: 20px;
+ } /* configurações que tive como base de um vídeo do youtube */
+
+ form button:hover {
+  background-color: #ae239c;
+  color: white;
+  border-radius: 16px;
+ } /* configurações que tive como base de um vídeo do youtube */
+
+ #redes {
+  width: 300px;
+  margin-left: auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
+ } /* configurações pra div.redes*/
+
+ .redes{
+  width: 30px;
+  display: inline;
+  margin-bottom: 20px;
+} /* configurações pra cada div de rede social|*/
+
+
+a img{
+  width: 25px;
+  margin-top: 10px;
+  margin-right: 20px;
+} /*caracteristicas das imagens de rede social*/
